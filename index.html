@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangy.net</title>
+</head>
+<body>
+
+<video id="vid" autoplay muted loop playsinline style="position: fixed; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index: -1;">
+    <source src="baby.mp4" type="video/mp4">
+</video>
+
+<audio id="aud" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="click" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: black; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+    <h1>CLICK ANYWHERE</h1>
+</div>
+
+<div style="position: relative; z-index: 1; text-align: center; padding-top: 20%; color: white;">
+    <h1>This da nigga's at gangy.net</h1>
+    <p>
+        <a href="https://waddle.com">Waddle</a>, 
+        <a href="https://soda.com">Soda</a>, 
+        <a href="https://lust.com">Lust</a>
+    </p>
+</div>
+
+<script>
+    document.getElementById('click').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('aud').play();
+    });
+</script>
+
+</body>
+</html>
